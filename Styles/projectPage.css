@@ -1,0 +1,54 @@
+.projectPage-RHS-content {
+	position: absolute;
+	right: 0px;
+	height: 100vh;
+	width: 61.8vw;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px solid black;
+}
+
+.projects-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	width: 61.8%;
+	padding: 1rem;
+}
+
+.project-title-container {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.project-title {
+	flex-grow: 0;
+	font-size: 3rem;
+	font-weight: 400;
+	margin: 2rem;
+	transition: font-weight 0.15s, transform 0.15s;
+}
+
+.project-emoji {
+	font-size: 3rem;
+	transition: all 0.7s;
+  width: 5rem;
+  text-align: center;
+}
+
+.project-title:hover {
+	font-weight: 700;
+	cursor: pointer;
+}
+
+/*
+a.nostyle:link, a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+}
+*/
