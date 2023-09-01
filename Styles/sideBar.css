@@ -14,22 +14,20 @@
   font-size: 5rem;
   font-weight: 400;
   margin: 0.3rem;
-  /*transition: font-weight 0.15s, transform 0.15s;*/
+  transition: font-weight 0.15s, transform 0.15s;
 }
 
 .sidebar-title:hover{
   font-weight:700;
-  font-style:italic;
+  /*font-style:italic;*/
   cursor:pointer;
 }
-
-difdaf:hover{
-  color:#f35e0e;
-}
-
 
 a.nostyle:link, a.nostyle:visited {
   text-decoration: inherit;
   color: inherit;
-  
+}
+
+a.difdaf:hover{
+  color:#f35e0e;
 }

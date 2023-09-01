@@ -13,7 +13,7 @@
 
   <a href="shapesPage.php" class="nostyle sidebar-title ">Shapes</a>
 
-  <a href="DifDafPage.php" class="nostyle sidebar-title difdaf">Dif Daf</a>
+  <a href="DifDafPage.php" class="difdaf nostyle sidebar-title ">Dif Daf</a>
 
   <a href="cardsPage.php" class="nostyle sidebar-title ">Cards</a>
 
