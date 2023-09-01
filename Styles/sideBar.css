@@ -7,13 +7,13 @@
   display:flex;
   flex-direction:column;
   align-items:center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .sidebar-title{
   font-size: 5rem;
   font-weight: 400;
-  margin: 0.3rem;
+  /*margin: 0.3rem;*/
   transition: font-weight 0.15s, transform 0.15s;
 }
 
