@@ -3,9 +3,19 @@
 	right: 0px;
 	height: 100vh;
 	width: 61.8vw;
-	background-color:white;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  border-left: 1px solid  black;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px solid black;
+}
+
+.contact-title-1 {
+	font-size: 10rem;
+	display: block;
+	
+}
+
+.contact-title-2{
+	font-size: 10rem;
 }

@@ -37,34 +37,6 @@ document.querySelectorAll('.js-project-title').forEach((title) => {
 	title.addEventListener('mouseleave', () => {
 		unrotate(title.dataset.projectId);
 	});
-
-	//title.addEventListener('mouseenter', rotate(title.dataset.projectId));
-
-	//title.addEventListener('mouseenter', rotate(title));
-	//title.addEventListener('mouseleave', unrotate(title));
 });
 
-/*
-console.log('test3');
-console.log('is this working?');
 
-const titleElement = document.querySelector('.js-project-title');
-
-const projectEmoji = document.querySelector('.js-project-emoji');
-
-const rotate = () => {
-	console.log('rotate');
-	//projectEmoji.style.transform = 'translateY(-100px) ';
-	projectEmoji.style.transform = 'rotate(360deg) scale(1.5,1.5)';
-
-	//projectEmoji.translate(0,50);
-};
-
-const unrotate = () => {
-	console.log('unrotate');
-	projectEmoji.style.transform = 'initial';
-};
-
-titleElement.addEventListener('mouseenter', rotate);
-titleElement.addEventListener('mouseleave', unrotate);
-*/

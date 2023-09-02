@@ -21,7 +21,9 @@
 	?>
 
 	<div class="contactPage-RHS-content">
-    nothing to see here yet...
+		
+    <div class="contact-title-1">Send me</div>
+		
 	</div>
 
 
