@@ -21,13 +21,16 @@
 	?>
 
 	<div class="contactPage-RHS-content">
-		
-    <div class="contact-title-1">Send me</div>
-		
+		<div class="contact-title-frame">
+			<div class="contact-title-1 js-contact-title-1"> <span class="send js-send js-word"> Send</span> <span class="me js-me js-word"> me </span> <span class="an js-an js-word"> an</span> <span class="email js-email js-word">email </span></div>
+		</div>
+Email form coming soon
+
+
 	</div>
 
 
-	<script></script>
+	<script src="../Scripts/contactPage.js"></script>
 </body>
 
 </html>

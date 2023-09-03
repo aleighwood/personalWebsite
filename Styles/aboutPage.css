@@ -3,96 +3,97 @@
 	right: 0px;
 	height: 100vh;
 	width: 61.8vw;
-	background-color:white;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  border-left: 1px solid  black;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px solid black;
 }
 
-.aboutme-container{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: white;
-  width:61.8%;
-  padding:1rem;
+.aboutme-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: white;
+	width: 61.8%;
+	padding: 1rem;
 }
 
-.header-section{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width:100%;
-  flex-wrap:wrap-reverse;
-  align-items:center;
+.header-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	flex-wrap: wrap-reverse;
+	align-items: center;
 }
 
-.header-frame{
-  width:61.8%;
+.header-frame {
+	width: 61.8%;
 }
 
-.name{
-  font-weight:400;
-  font-size: 2rem;
+.name {
+	font-weight: 400;
+	font-size: 2rem;
+  margin-bottom:1.5rem;
 }
 
-.occupation{
-  font-weight:300;
-  color: #8b8b8b;;
-  font-size:1.8rem;
+.occupation {
+	font-weight: 300;
+	color: #8b8b8b;
+	font-size: 1.7rem;
+  padding-right: 0.5rem;
 }
 
-img{
-  width:38.2%;
-  border-radius: 60%;
+img {
+	width: 38.2%;
+	border-radius: 60%;
+	
 }
 
-
-.toggles{
-  width:100%;
-  display:flex;
-  justify-content: space-evenly;
-  padding-top:1.5rem;
-  padding-bottom: 1.5rem;
+.toggles {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 }
 
-button.about-me-button{
-  width:120px;
-  height:30px;
-  font-family: 'Ubuntu', Arial;
-  font-size:1.2rem;
-  background-color:white;
-  border: 2px solid gray;
-  color: gray;
-  border-radius:15px;
-  transition: font-weight 0.15s, transform 0.15s;
+button.about-me-button {
+	width: 120px;
+	height: 30px;
+	font-family: 'Ubuntu', Arial;
+	font-size: 1.2rem;
+	background-color: white;
+	border: 2px solid gray;
+	color: gray;
+	border-radius: 15px;
+	transition: font-weight 0.15s, transform 0.15s;
 }
 
-button.about-me-button:hover{
-cursor:pointer;
-border-color:#f35e0e;
-color:#f35e0e;
-transform: scale(1.2);
+button.about-me-button:hover {
+	cursor: pointer;
+	border-color: #f35e0e;
+	color: #f35e0e;
+	transform: scale(1.2);
 }
 
-button.about-me-clicked{
-  width:120px;
-  height:30px;
-  font-family: 'Ubuntu', Arial;
-  font-size:1.2rem;
-  background-color:white;
-  border: 2px solid #f35e0e;
-  color: #f35e0e;
-  border-radius:15px;
-  transform: scale(1.2);
-  transition: font-weight 0.15s, transform 0.15s;
+button.about-me-clicked {
+	width: 120px;
+	height: 30px;
+	font-family: 'Ubuntu', Arial;
+	font-size: 1.2rem;
+	background-color: white;
+	border: 2px solid #f35e0e;
+	color: #f35e0e;
+	border-radius: 15px;
+	transform: scale(1.2);
+	transition: font-weight 0.15s, transform 0.15s;
 }
 
-.bio-text{
-  font-size: 1.1rem;
-  padding:0;
-  margin:0;
-
+.bio-text {
+	font-size: 1.1rem;
+	padding: 0;
+	margin: 0;
 }
