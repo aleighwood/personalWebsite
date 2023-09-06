@@ -22,5 +22,5 @@ export const projects = [
 		year: '2022',
 		category: 'Electronics',
 		url: 'u',
-	},
+	}
 ];

@@ -5,7 +5,24 @@
 	width: 61.8vw;
 	background-color:white;
   display:flex;
+	flex-direction: column;
   justify-content: center;
   align-items: center;
   border-left: 1px solid  black;
+}
+
+#difdaf{
+	position:absolute;
+	align-self:center;
+	
+}
+/*
+#difdaf:hover{
+	transform: rotate(90deg);
+}
+*/
+
+.dif-daf-info{
+	padding:3rem;
+	
 }

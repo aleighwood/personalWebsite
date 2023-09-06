@@ -4,33 +4,6 @@ console.log('working7');
 const box = document.querySelector('.js-playground');
 const label = document.querySelector('#shape');
 
-/*
-let rect = label.getBoundingClientRect();
-
-let left = rect.x;
-console.log(`item left: ${left}`);
-
-let left2 = label.style.left;
-console.log(`item left2: ${left2}`)
-
-let top1 = rect.y;
-console.log(`item top: ${top1}`);
-console.log(`item width: ${rect.width}`);
-console.log(`item height: ${rect.height}`);
-
-let width = box.getBoundingClientRect().width;
-let height = box.getBoundingClientRect().height;
-console.log(`container width: ${width}`);
-console.log(`container height: ${height}`);
-
-
-
-let top2 = rect.y;
-let top3 = label.style.top;
-console.log(`using .style: ${top2}`);
-console.log(`using  .rect: ${top3}`);
-*/
-
 let colors = [
 	'#26de81',
 	'#fc5c65',
@@ -52,8 +25,8 @@ let FPS = 60;
 
 let width,
 	height,
-	velocityX = 2,
-	velocityY = 2,
+	velocityX = 5,
+	velocityY = 5,
 	pause = true,
 	previousColor = 0;
 
@@ -73,7 +46,6 @@ const reset = () => {
 	console.log('reset triggered');
 	console.log(`container width: ${width}`);
 	console.log(`container height:${height}`);
-	
 };
 
 reset();
@@ -98,93 +70,34 @@ setInterval(() => {
 	console.log('frame');
 
 	let rect = label.getBoundingClientRect();
-	//let container = box.getBoundingClientRect();
 
-	//let leftWall = container.x;
-	//let rightWall = container.right;
-	//let topWall = container.y;
-	//let bottomWall = container.bottom;
-
-	//let left = rect.x;
-	//let left = label.style.left;
-	//console.log(left);
-
-	/*
-	//horizontal:
-	let left2 = rect.x;
+	// Horizontal position:
 	let left = label.style.left;
-	left = left.slice(0, -2);
-	//Number(left);
-	
-	console.log(typeof(left));
-	console.log(`using .style: ${left}`);
-	//console.log(typeof(left2));
-	console.log(`using  .rect: ${left2}`);
+	left = Number(left.slice(0, -2));
 
-	//vertical:
-	let top2 = rect.y;
+	//Vertical position:
 	let top = label.style.top;
-	console.log(`using .style: ${top}`);
-	console.log(`using  .rect: ${top2}`);
-*/
-
-// Horizontal position:
-let left = label.style.left;
-left = Number(left.slice(0, -2));
-
-//Vertical position: 
-let top = label.style.top;
-top = Number(top.slice(0, -2));
-
-//Type testing
-
-console.log(left+rect.width);
-console.log(width);
-
-if (left + rect.width >= width || left<=0){
-	console.log('boundary passed');
-	velocityX = -velocityX;
-	let randomColor = getRandomColor();
-	label.style.fill = randomColor;
-}
-
-if (top + rect.height >= height || top<=0){
-	console.log('boundary passed');
-	velocityY = -velocityY;
-	let randomColor = getRandomColor();
-	label.style.fill = randomColor;
-}
+	top = Number(top.slice(0, -2));
 
 
 
-
-/*
 	if (left + rect.width >= width || left <= 0) {
+		console.log('boundary passed');
 		velocityX = -velocityX;
-		//let randomColor = getRandomColor();
-		//label.style.fill = randomColor;
-		console.log('horizontal boundary passed');
-		//console.log(velocityX);
-		//label.style.left = '0px';
+		let randomColor = getRandomColor();
+		label.style.fill = randomColor;
+		
 	}
 
-	if (top + rect.height >= height|| top <= 0) {
+	if (top + rect.height >= height || top <= 0) {
+		console.log('boundary passed');
 		velocityY = -velocityY;
-		console.log('vertical boundary passed');
-
-		//let randomColor = getRandomColor();
-		//label.style.fill = randomColor;
+		let randomColor = getRandomColor();
+		label.style.fill = randomColor;
 	}
-	*/
-
 
 	label.style.left = left + velocityX + 'px';
 	label.style.top = top + velocityY + 'px';
-	//velocityX += 1;
+	//label.style.transform = 'rotate(45deg)rotate(-45deg)';
 
-	
-	//velocityY += 1;
-
-	//label.style.left = left + velocityX + 'px';
-	//label.style.top = top + velocityY + 'px';
-}, 1000/FPS);
+}, 1000 / FPS);

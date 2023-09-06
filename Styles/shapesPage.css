@@ -1,60 +1,60 @@
-/*
-
 .shapesPage-RHS-content {
 	position: absolute;
 	right: 0px;
 	height: 100vh;
 	width: 61.8vw;
+	border-left: 1px solid black;
 	background-color: white;
-	border-left: 1px solid black;
-
-}
-.fun-box{
-	height: 500px;
-	width: 500px;
-	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#shape{
+.shapes-info-frame {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 61.8%;
+	padding: rem;
+	height: 100%;
+}
+
+.shapes-button{
+	width:100%;
+	padding:2rem;
+	font-size:1.5rem;
+	color: white;
+	border-radius: 15px;
+	background-color: red;
+	border:none;
+	font-family: 'Ubuntu', Arial;
+	transition: font-weight 0.15s, transform 0.15s;
+}
+
+.shapes-button:hover{
+	cursor: pointer;
+	font-weight: 700;
+	transform: scale(1.2,1.2);
+}
+
+	.shapes-info{
+	font-size: 2rem;
+	text-align: center;
+	padding-bottom: 2rem;
+
+}
+
+
+
+
+
+
+
+
+#shape {
 	position: absolute;
-	
-  left: calc(50vw - 150px);
-  top: calc(50vh - 28px);
-  width: 300px;
-  height: 56px;
-}
-*/
-
-body {
-	width: 100vw;
-	height: 100vh;
-	background-color: #0f0f13;
-	overflow: hidden;
-	position: relative;
+  top:20px;
 }
 
-.shapesPage-RHS-content {
-	/*position: absolute;*/
-	position: relative;
-	right: 0px;
-	height: 100vh;
-	width: 61.8vw;
-	background-color: lightblue;
-	border-left: 1px solid black;
 
-}
-
-.fun-box {
-	height: 500px;
-	width: 500px;
-	position: relative;
-	background-color: lightpink;
-}
-
-#label {
-	position: absolute;
-	left: calc(50vw - 150px);
-	top: calc(50vh - 28px);
-	width: 30px;
-	height: 8px;
-}

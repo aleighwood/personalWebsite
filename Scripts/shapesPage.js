@@ -1,93 +1,109 @@
-const body = document.querySelector('.js-fun-box')
-const label = document.querySelector('#label')
-/* read documentation and try again....
+const box = document.querySelector('.js-playground');
+const label = document.querySelector('#shape');
 
+const button = document.querySelector('.js-shapes-button');
+//button.addEventListener('mouseon')
 
+let colors = [
+  '#f5840d',
+  '#7934e0',
+  '#34deed', 
+  '#17e85d',
+	'#26de81',
+	'#fc5c65',
+	'#fd9644',
+	'#fed330',
+	'#2bcbba',
+	'#45aaf2',
+	'#4b7bec',
+	'#a55eea',
+	'#ffc1f3',
+	'#76ead7',
+	'#ff9c71',
+	'#32e0c4',
+	'#d291bc',
+	'#fa744f',
+];
 
-let colors = [ '#26de81', '#fc5c65', '#fd9644', '#fed330', '#2bcbba', '#45aaf2', '#4b7bec', '#a55eea', '#ffc1f3', '#76ead7', '#ff9c71', '#32e0c4', '#d291bc', '#fa744f' ]
+let FPS = 60;
 
-let FPS = 60
-
-let width
-  , height
-  , velocityX = 1
-  , velocityY = 1
-  , pause = true
-  , previousColor = 0
-;
-
-setInterval(() => {
-  if (pause) return;
-
-  let rect = label.getBoundingClientRect()
-
-  let left = rect.x
-  let top = rect.y
-
-  if (left + rect.width >= width || left <= 0) {
-    velocityX = -velocityX
-    let randomColor = getRandomColor()
-    label.style.stroke = randomColor
-    
-    if (left + 150 <= width / 2) {
-      body.style.boxShadow = `inset 4px 0px 0px 0px ${randomColor}`
-    } else {
-      body.style.boxShadow = `inset -4px 0px 0px 0px ${randomColor}`
-    }
-  }
-  if (top + rect.height >= height || top <= 0) {
-    velocityY = -velocityY
-    let randomColor = getRandomColor()
-    label.style.stroke = randomColor
-    
-    if (top + 28 <= height / 2) {
-      body.style.boxShadow = `inset 0px 4px 0px 0px ${randomColor}`
-    } else {
-      body.style.boxShadow = `inset 0px -4px 0px 0px ${randomColor}`
-    }
-  }
-
-  label.style.left = rect.x + velocityX + 'px'
-  label.style.top = rect.y + velocityY + 'px'
-}, 1000 / FPS)
-
+let width,
+	height,
+	velocityX = 10,
+	velocityY = 10,
+	pause = true,
+	previousColor = 0;
 
 const reset = () => {
-  width =
-    window.innerWidth ||
-    document.documentElement.clientWidth ||
-    document.body.clientWidth
-  ;
+	width = box.getBoundingClientRect().width;
+	height = box.getBoundingClientRect().height;
 
-  height =
-    window.innerHeight ||
-    document.documentElement.clientHeight ||
-    document.body.clientHeight
-  ;
+	pause =
+	width <= label.getBoundingClientRect().width ||
+	height <= label.getBoundingClientRect().height;
 
-  pause =
-    width <= label.getBoundingClientRect().width ||
-    height <= label.getBoundingClientRect().height
-  ;
+	label.style.left = '1px';
+	label.style.top = '1px';
 
-  label.style.left = 'calc(50vw - 150px)'
-  label.style.top = 'calc(50vh - 28px)'
-  label.style.stroke = colors[0]
-}
+	label.style.stroke = colors[0];
 
+	console.log('reset triggered');
+	console.log(`container width: ${width}`);
+	console.log(`container height:${height}`);
+};
+
+reset();
+
+window.addEventListener('resize', reset, true);
 
 const getRandomColor = () => {
-  let currentColor = -1
-  
-  do {
-    currentColor = Math.floor(Math.random() * colors.length);
-  } while (previousColor == currentColor);
-  
-  previousColor = currentColor
-  
-  return colors[currentColor]
-}
+	let currentColor = -1;
 
-reset()
+	do {
+		currentColor = Math.floor(Math.random() * colors.length);
+	} while (previousColor == currentColor);
 
-window.addEventListener('resize', reset, true)
+	previousColor = currentColor;
+
+	return colors[currentColor];
+};
+
+setInterval(() => {
+	if (pause) return;
+
+	console.log('frame');
+
+	let rect = label.getBoundingClientRect();
+
+	// Horizontal position:
+	let left = label.style.left;
+	left = Number(left.slice(0, -2));
+
+	//Vertical position:
+	let top = label.style.top;
+	top = Number(top.slice(0, -2));
+
+
+
+	if (left + rect.width >= width || left <= 0) {
+		console.log('boundary passed');
+		velocityX = -velocityX;
+		let randomColor = getRandomColor();
+		label.style.fill = randomColor;
+    button.style.backgroundColor = randomColor;
+		
+	}
+
+	if (top + rect.height >= height || top <= 0) {
+		console.log('boundary passed');
+		velocityY = -velocityY;
+		let randomColor = getRandomColor();
+		label.style.fill = randomColor;
+    button.style.backgroundColor = randomColor;
+	}
+
+	label.style.left = left + velocityX + 'px';
+	label.style.top = top + velocityY + 'px';
+	//label.style.transform = 'rotate(45deg)rotate(-45deg)';
+
+}, 1000 / FPS);
