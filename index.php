@@ -1,4 +1,20 @@
 <?php
   phpinfo();
-
 ?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>About</title>
+</head>
+
+<body>
+
+
+
+test
+
+</body>
+
+</html>
