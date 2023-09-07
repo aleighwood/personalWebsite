@@ -1,9 +1,4 @@
 <nav class="sidebar">
-  <!--  
-  <div class="sidebar-title">
-    <a href="aboutPage.php" class="nostyle">About</a>
-  </div>
--->
 
   <a href="index.php" class="nostyle sidebar-title ">About</a>
 
