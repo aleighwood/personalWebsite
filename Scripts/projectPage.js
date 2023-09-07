@@ -4,7 +4,9 @@ const rotate = (projectId) => {
 	console.log('rotate');
 
 	let projectEmoji = document.querySelector(`.js-project-emoji-${projectId}`);
-	projectEmoji.style.transform = 'rotate(360deg) scale(1.5,1.5)';
+	projectEmoji.style.transform = 'rotate(360deg) '
+
+	//projectEmoji.style.transform = 'rotate(360deg) scale(1.5,1.5)';
 };
 
 const unrotate = (projectId) => {
