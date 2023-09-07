@@ -1,7 +1,3 @@
-<?php
-  phpinfo();
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -13,7 +9,7 @@
 
 
 
-test
+test!
 
 </body>
 
