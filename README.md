@@ -1,3 +1,3 @@
 # personalWebsite
 
-Here is the code for my personal website
+I thought it would be a good challenge to build my own website from scratch. There will always be things to fix / improve...
