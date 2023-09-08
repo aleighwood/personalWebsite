@@ -1,6 +1,6 @@
 <nav class="sidebar">
 
-  <a href="index.php" class="nostyle sidebar-title ">About</a>
+  <a href="aboutPage.php" class="nostyle sidebar-title ">About</a>
 
   <a href="projectPage.php" class="nostyle sidebar-title ">Projects</a>
 
