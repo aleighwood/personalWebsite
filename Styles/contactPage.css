@@ -28,6 +28,8 @@
 /*	background-color: lightpink;*/
 }
 
+
+
 .form-area {
 	display: flex;
 	flex-direction: column;
@@ -88,4 +90,15 @@
 	background-color: red;
 	font-weight: 700;
 	transform: initial;
+}
+
+
+@media(max-width:900px){
+	.contact-title-1{
+		font-size: 10vh;
+	}
+
+	#contact-send-button{
+		font-size: 5vh ;
+	}
 }
