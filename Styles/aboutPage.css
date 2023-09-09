@@ -31,12 +31,18 @@
 
 .header-frame {
 	width: 61.8%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	height: 100%;
+
 }
 
 .name {
 	font-weight: 400;
 	font-size: 2rem;
-  margin-bottom:1.5rem;
+ 
 }
 
 .occupation {
