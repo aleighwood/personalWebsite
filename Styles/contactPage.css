@@ -68,10 +68,10 @@
 
 #contact-send-button {
 	width: 100%;
-	height: 10vh;
-	background-color: lightpink;
+	padding:1rem;
+	background-color: blue;
 	border: none;
-	font-size: 5rem;
+	font-size: 10vh;
 	font-weight: 400;
 	transition: font-weight 0.15s;
 	transition: transform 0.15s;
@@ -80,6 +80,7 @@
 	margin-bottom: 0.3rem;
 	margin-top:0.3rem;
 	transform: scale(0.9);
+	text-align: center;
 }
 
 #contact-send-button:hover {
