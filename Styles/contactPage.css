@@ -5,7 +5,8 @@
 	width: 61.8vw;
 	background-color: white;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: flex-start;
 	align-items: center;
 	border-left: 1px solid black;
 }
@@ -13,34 +14,77 @@
 .contact-frame {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	/*background-color: lightblue;*/
-
 	width: 61.8%;
-	padding: 3rem;
 	height: 100%;
 }
 
 .contact-title-1 {
 	text-align: center;
-	font-size: 10rem;
+	font-size:15vh;
 	padding: 0;
-	
+/*	background-color: lightpink;*/
 }
 
-.send {
-	color: #f35e0e;
+.form-area {
+	display: flex;
+	flex-direction: column;
+/*	background-color: lightgreen;*/
+	width: 100%;
+	height: 100%;
 }
 
-.me {
-	color: blue;
+.name-email-box {
+	padding-top: 0.3rem;
+	padding-bottom: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+/*	background-color: lightblue;*/
+	width: 100%;
 }
 
-.an {
-	color: purple;
+.contact-input-line {
+	font-size: 1rem;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 0.2rem solid lightgrey;
+	outline: none;
+	width:40%;
+
 }
 
-.email {
-	color: green;
+.message-box {
+	width: 100%;
+	height:100%;
+	resize: none;
+	border: 0.2rem solid lightgrey;
+	overflow:auto;
+	padding: 0.1rem;
+	outline:none;
+}
+
+#contact-send-button {
+	width: 100%;
+	height: 10vh;
+	background-color: lightpink;
+	border: none;
+	font-size: 5rem;
+	font-weight: 400;
+	transition: font-weight 0.15s;
+	transition: transform 0.15s;
+	color: white;
+	border-radius: 2rem;
+	margin-bottom: 0.3rem;
+	margin-top:0.3rem;
+	transform: scale(0.9);
+}
+
+#contact-send-button:hover {
+	cursor: pointer;
+	background-color: red;
+	font-weight: 700;
+	transform: initial;
 }

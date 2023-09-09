@@ -1,3 +1,7 @@
+*{
+	font-family: 'Ubuntu', Arial;
+}
+
 body{
 	margin: 0px;
 	padding: 0px;
@@ -5,9 +9,10 @@ body{
 	width: 100vw;
 	height: 100vh;
 	background-color: orange;
-	font-family: 'Ubuntu', Arial;
 	overflow: hidden;
 }
+
+
 
 /*
  here maybe https://www.linkedin.com/pulse/how-using-rem-can-help-you-build-excellent-andr%C3%A9-fillype/

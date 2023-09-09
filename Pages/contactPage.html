@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Contact</title>
 
-<head>
-	<title>Contact</title>
+		<link rel="stylesheet" href="../Styles/General.css" />
+		<link rel="stylesheet" href="../Styles/sideBar.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap"
+			rel="stylesheet"
+		/>
 
-	<link rel="stylesheet" href="../Styles/General.css" />
-	<link rel="stylesheet" href="../Styles/sideBar.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../Styles/contactPage.css" />
+	</head>
 
-	<link rel="stylesheet" href="../Styles/contactPage.css" />
-
-</head>
-
-<body>
-
+	<body>
+		<!--
 	<?php
 	#include("../modularContent/sidebar.php")
 	?>
+	-->
 
-<nav class='sidebar js-sidebar'>
-</nav>
+		<nav class="sidebar js-sidebar"></nav>
 
-	<div class="contactPage-RHS-content">
+		<div class="contactPage-RHS-content">
+			<div class="contact-frame">
+				<div class="contact-title-1 js-contact-title-1">
+					<span class=" js-word"> Send</span>
+					<span class=" js-word"> me </span>
+					<span class=" js-word"> an</span>
+					<span class=" js-word">email </span>
+				</div>
+			
 
-
-
-		<div class="contact-frame">
-			<div class="contact-title-1 js-contact-title-1"> <span class="send js-send js-word"> Send</span> <span class="me js-me js-word"> me </span> <span class="an js-an js-word"> an</span> <span class="email js-email js-word">email </span></div>
-			Email form coming soon
+				<form 
+				class="form-area"
+				method="post"
+				action="https://forms.un-static.com/forms/a21785f5a36f839cf7bab9b1b64aac9aebf7e927">
+				<div class="name-email-box">
+					<input class="contact-input-line" type="text" name="name" placeholder="Enter your name" required />
+					<input
+					class="contact-input-line"
+					type="email"
+					name="email"
+					placeholder="Enter your e-mail address"
+					required
+				/>
+				</div>
+					<textarea  class ="message-box" name="message" placeholder="Your message"
+					required></textarea>
+					<button id="contact-send-button">SEND</button>
+				</form>
 		</div>
-
-		
-
-
-
-	</div>
-
-	<script src="../Scripts/sidebar.js"></script>
-	<script src="../Scripts/contactPage.js"></script>
-</body>
-
+		<script src="../Scripts/sidebar.js"></script>
+		<script src="../Scripts/contactPage.js"></script>
+	</body>
 </html>
