@@ -19,14 +19,15 @@ body{
 */
 
 
-
-@media(max-width:900px){
-html{
-	font-size: 70%;
+/*
+html {
+  font-size: 100%;
+  @media only screen and (max-width: 500px) {
+    font-size: 70%;
+  }
 }
-}
 
-
+*/
 
 
 

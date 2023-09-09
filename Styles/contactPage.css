@@ -101,4 +101,8 @@
 	#contact-send-button{
 		font-size: 5vh ;
 	}
+
+	.contact-input-line{
+		font-size: 0.5rem;
+	}
 }

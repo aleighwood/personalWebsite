@@ -17,6 +17,13 @@
   transition: font-weight 0.15s, transform 0.15s;
 }
 
+
+@media only screen and (max-width:900px){
+.sidebar-title{
+  font-size:1.8rem;
+}
+}
+
 .sidebar-title:hover{
   font-weight:700;
   /*font-style:italic;*/

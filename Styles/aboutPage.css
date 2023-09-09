@@ -1,13 +1,16 @@
 .aboutPage-RHS-content {
 	position: absolute;
 	right: 0px;
-	height: 100vh;
+	height:100vh;
 	width: 61.8vw;
 	background-color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-left: 1px solid black;
+	overflow-y: auto;
+	/*padding-left: 1rem;*/
+	
 }
 
 .aboutme-container {
@@ -25,37 +28,53 @@
 	flex-direction: row;
 	justify-content: space-between;
 	width: 100%;
-	flex-wrap: wrap-reverse;
+
 	align-items: center;
 }
 
+
+@media (max-width: 1200px) {
+	.header-section {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.header-frame {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+@media(max-width:500px){
+	button.about-me-button {
+		font-size: 0.1rem;
+	}
+}
+
 .header-frame {
-	width: 61.8%;
+	/*width: 61.8%;*/
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content:center;
+	justify-content: center;
 	height: 100%;
-
 }
 
 .name {
 	font-weight: 400;
 	font-size: 2rem;
- 
 }
 
 .occupation {
 	font-weight: 300;
 	color: #8b8b8b;
 	font-size: 1.7rem;
-  padding-right: 0.5rem;
+	padding-right: 0.5rem;
 }
 
 img {
-	width: 38.2%;
+	width: 188px;
 	border-radius: 60%;
-	
 }
 
 .toggles {
@@ -67,10 +86,10 @@ img {
 }
 
 button.about-me-button {
-	width: 120px;
+	width: 30%;
 	height: 30px;
 	font-family: 'Ubuntu', Arial;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	background-color: white;
 	border: 2px solid gray;
 	color: gray;
@@ -86,10 +105,9 @@ button.about-me-button:hover {
 }
 
 button.about-me-clicked {
-	width: 120px;
+	width: 50%;
 	height: 30px;
 	font-family: 'Ubuntu', Arial;
-	font-size: 1.2rem;
 	background-color: white;
 	border: 2px solid #f35e0e;
 	color: #f35e0e;
