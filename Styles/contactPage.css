@@ -20,6 +20,7 @@
 	/*background-color: lightblue;*/
 	width: 61.8%;
 	height: 90%;
+	
 }
 
 .contact-title-1 {
@@ -95,15 +96,22 @@
 
 
 @media(max-width:900px){
+
+	.contactPage-RHS-content{
+		padding-bottom: 10vh;
+	}
 	.contact-title-1{
 		font-size: 10vh;
 	}
 
 	#contact-send-button{
 		font-size: 5vh ;
+		margin-bottom: 10vh;
 	}
 
 	.contact-input-line{
 		font-size: 0.5rem;
 	}
+
+	
 }
