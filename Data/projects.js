@@ -13,15 +13,7 @@ export const projects = [
 		emoji: '&#11015',
 		year: '2023',
 		category: 'Electronics',
-		url: 'u'
-	},
-	{
-		name: 'Door monitor',
-		id: '003',
-		emoji: '&#128682',
-		year: '2022',
-		category: 'Electronics',
-		url: 'u'
+		url: 'https://github.com/aleighwood/forceSensor'
 	},
 	{
 	name: 'This website',
