@@ -26,10 +26,12 @@ let colours = [
 ];
 let shuffledArray = [];
 
+// shuffle color array
 function shuffleColourArray() {
 	shuffledArray = colours.sort((a, b) => 0.5 - Math.random());
 }
 
+// changes colours of words
 function colourStyling() {
 	shuffleColourArray();
 	document
@@ -43,6 +45,7 @@ function colourStyling() {
 
 colourStyling();
 
+// sense hovering over word, then change colour
 document.querySelectorAll('.js-word').forEach((word) => {
 	console.log('word found');
   word.addEventListener('mouseenter',colourStyling);
