@@ -22,5 +22,22 @@ export const projects = [
 	year: '2023',
 	category: 'Websites',
 	url: 'https://github.com/aleighwood/personalWebsite'},
+
+	{
+	name: 'System Verilog CPU design',
+	id: '005',
+	emoji: '&#x1f4bb',
+	year: '2024',
+	category: 'Electronics',
+	url: 'https://github.com/aleighwood/system_verilog_design'},
+
+	{
+		name: 'Sleep movement sensor',
+		id: '006',
+		emoji: '&#x1f634;',
+		year: '2024',
+		category: 'Electronics',
+		url: 'https://github.com/aleighwood/movement_sensor_array'}
+
 	
 ];
