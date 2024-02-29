@@ -39,5 +39,4 @@ export const projects = [
 		category: 'Electronics',
 		url: 'https://github.com/aleighwood/movement_sensor_array'}
 
-	
 ];
