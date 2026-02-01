@@ -15,7 +15,7 @@ export const projects = [
 		emoji: '&#128251',
 		year: '2025',
 		category: 'Electronics',
-		url: 'https://github.com/aleighwood/FM-radio-FPGA-implementation-Northwestern-COMP_ENG_387'
+		url: 'https://github.com/aleighwood/FM-radio-FPGA-implementation-Northwestern-COMP_ENG_387-'
 	},
 
 		{
